@@ -8,13 +8,12 @@ interface Props {
   pokemon: Pokemon;
 }
 
-
 const PokemonCard:React.FC<Props> = (props) =>  {
   const [hover, setHover] = useState(false);
   const {pokemon} = props;
   const {id, name} = pokemon;
   const [color, setColor] = useState('');
-  const img = pokemon.sprites.versions['generation-v']['black-white'].animated.front_default;
+  const img = pokemon.sprites.other.dream_world.front_default || pokemon.sprites.other.home.front_default;
   const typeList = pokemon.types;
   useEffect(() => {
     const getPokeSpec = async () => {
@@ -37,7 +36,7 @@ const PokemonCard:React.FC<Props> = (props) =>  {
         <h4 className="poke_card__name" >{toUpperCaseFirstLetter(name)}</h4>
         <div className="poke_card__skill">
         {typeList.map((type) => (
-          <span className="poke_card__skill-item background-grass">
+          <span className={`poke_card__skill-item background-${type.type.name}`}>
             {toUpperCaseFirstLetter(type.type.name)}
           </span>)
         )}

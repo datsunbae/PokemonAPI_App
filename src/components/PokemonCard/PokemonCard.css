@@ -29,9 +29,18 @@
     padding: 1.25rem;
 }
 
+.poke_card__id {
+    font-size: 0.9rem
+}
+
 .poke_card__id,
 .poke_card__name {
     padding: 0 0 0.3rem 0;
+}
+
+.poke_card__skill {
+    color: #fff;
+    font-size: 1rem;
 }
 
 .poke_card__skill-item {

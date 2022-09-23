@@ -19,12 +19,94 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
-  --bs-white: #fff;
+  --bs-white: rgb(214, 214, 214);
   --bs-gray: #6c757d;
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+}
+
+
+/* Types */
+.background-fire {
+  background: #fd7d24;
+}
+
+.background-poison {
+  background: #b97fc9;
+}
+
+.background-grass {
+  background: #9bcc50;
+}
+
+.background-water {
+  background: #4592c4;
+}
+
+.background-bug {
+  background: #729f3f;
+}
+
+.background-normal {
+  background: #a4acaf;
+}
+
+.background-electric {
+  background: #eed535;
+}
+
+.background-fairy {
+  background: #fdb9e9;
+}
+
+.background-fighting {
+  background: #d56723;
+}
+
+.background-psychic {
+  background: #f366b9;
+}
+
+.background-fying {
+  background: #e4f4f5;
+}
+
+.background-ground {
+  background: #b38e82;
+}
+
+.background-rock {
+  background: #a38c21;
+}
+
+.background-steel {
+  background: #9eb7b8;
+}
+
+.background-ice {
+  background:#51c4e7;
+}
+
+.background-ghost {
+  background: #7b62a3;
+}
+
+.background-dragon {
+  background: #177258;
+}
+
+.background-dark {
+  background: #707070;
+}
+
+.background-white{
+  background: #fff;
+}
+
+* {
+  font-family: Roboto Mono,monospace;
 }
 
 body {
@@ -71,4 +153,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.btn_loadmore {
+  display: flex;
+  margin: 1rem auto 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: bold;
+}
+
+.btn_loadmore:hover {
+  background-color: rgba(38, 100, 217, 0.646);
+  color: #fff;
+  cursor: pointer;
 }

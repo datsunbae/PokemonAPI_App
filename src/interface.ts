@@ -4,8 +4,12 @@ export interface Pokemon {
     name: string,
     url: string,
     sprites: {
+        front_default: string,
         other: {
             dream_world: {
+                front_default: string
+            },
+            home: {
                 front_default: string
             }
         },
