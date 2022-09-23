@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, {useEffect,useState} from 'react'
-import { toUpperCaseFirstLetter } from '../../func/toUpperCaseFirstLetter';
-import { Pokemon } from '../../interface';
+import { toUpperCaseFirstLetter } from '../../../../func/toUpperCaseFirstLetter';
+import { Pokemon } from '../../../../interface';
 import './PokemonCard.css'
 
 interface Props {

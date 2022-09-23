@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pokemon } from '../../interface';
+import { Pokemon } from '../../../../interface';
 import PokemonCard from '../PokemonCard';
 
 interface Props {
